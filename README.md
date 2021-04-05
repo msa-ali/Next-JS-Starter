@@ -30,3 +30,9 @@
 - **Fullstack Capabilities**
   - Easily add backend(server-side) code to your Next/React apps
   - Storing data, getting data, autentication etc. can be added to your React Projects.
+
+## Create New NEXT.js App
+
+npx create-next-app
+or
+yarn create next-app
