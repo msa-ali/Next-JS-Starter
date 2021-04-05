@@ -73,3 +73,10 @@ Consider this file structure
 
 Next.js will look up these pages folder and now infer routes.
 Based on index.js, it will infer it is Main Starting Point.
+
+## File-based Routing vs Code-based Routing
+
+No extra boilerplate code required - Boilerplate setup in code required
+Intuitive system - Straightforward but includes new components + concepts
+File + folder structure influence routes - File + folder structure doesnt matter at all
+Navigation works with Link component and imperatively - Navigation works with Link component and imperatively
