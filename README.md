@@ -41,17 +41,20 @@ yarn create next-app
 
 - Traditional React Routing config looks like this:
 
-    <Switch>
-      <Route path="/products">
-        <ProductsPage />
-      </Route>
-      <Route path="/products/:id">
-        <ProductDetailPage />
-      </Route>
-      <Route path="/">
-        <HomePage />
-      </Route>
-    </Switch>
+  ```
+  <Switch>
+    <Route path="/products">
+      <ProductsPage />
+    </Route>
+    <Route path="/products/:id">
+      <ProductDetailPage />
+    </Route>
+    <Route path="/">
+      <HomePage />
+    </Route>
+  </Switch>
+
+  ```
 
 - Instead in Next.js , Create React component files and let Next.JS infer the routes from the folder structure.
 
