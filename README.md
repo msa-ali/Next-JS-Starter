@@ -36,3 +36,37 @@
 npx create-next-app
 or
 yarn create next-app
+
+## File-based Routing Instead of Code-based Routing
+
+- Traditional React Routing config looks like this:
+
+    <Switch>
+      <Route path="/products">
+        <ProductsPage />
+      </Route>
+      <Route path="/products/:id">
+        <ProductDetailPage />
+      </Route>
+      <Route path="/">
+        <HomePage />
+      </Route>
+    </Switch>
+
+- Instead in Next.js , Create React component files and let Next.JS infer the routes from the folder structure.
+
+- The Special _"/pages"_ folder
+
+## How File-based Routing Works
+
+Consider this file structure
+
+- /pages
+  - index.js --------------------------> my-domain.com/ ( Main Starting Page )
+  - about.js --------------------------> my-domain.com/about
+  - /products
+    - index.js ------------------------> my-domain.com/products
+    - [id].js -------------------------> my-domain.com/products/2 (adding dynamic path)
+
+Next.js will look up these pages folder and now infer routes.
+Based on index.js, it will infer it is Main Starting Point.
